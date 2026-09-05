@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="#">
+    <title>Skyrim - 7000 askelmaa</title>
+    <link rel="icon" type="image/jpg" href="skyrimlogotransparent.png">
+    <style>
+        body {
+            background-image: url("maisema.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nappi {
+            background-color: rgb(190, 140, 0);
+            color: black;
+            font-family: "Courier New", Courier, monospace;
+            border: 1px solid black;
+            font-size: 20px;
+            cursor: pointer;
+            margin: auto
+        }
+
+        h2 {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        p {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 18px;
+        }
+
+        img {
+            width: 60%
+        }
+
+        table, th, td {
+            border: 1px solid dimgrey;
+            border-collapse:collapse;
+        }
+
+        th, td {
+            background-color: rgba(190, 140, 30);
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header {
+            background-color: rgba(190, 140, 0, 0.8);
+            border: 2px solid black;
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        section {
+            background-color: rgba(160, 160, 160, 0.7);
+            border: 1px solid black;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0;
+            padding: 10px
+        }
+
+        main {
+            padding: 24px;
+        }
+
+        hr {
+            border-color: black
+        }
+
+        a {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: maroon
+        }
+
+        a:link {
+            color: black
+        }
+
+        aside {
+            background-color: rgba(190, 140, 0, 0.7);
+            border: 1px solid black;
+            max-width: 500px;
+            width: 100%;
+            margin-top: 2%;
+            float: right;
+        }
+
+        .kuva {
+            border: 5px solid black;
+        }
+
+        .sivukuva {
+            border: 5px solid black
+        }
+
+        .sivupalkki {
+            height:100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+            background-color: rgba(190, 140, 0);
+            border: 1px solid black;
+            padding-top: 60px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .sivupalkki a {
+            display: block;
+            padding: 8px 8px 8px 32px;
+            transition: 0.3s;
+            color: black;
+        }
+
+        .sivupalkki .sulkunappi {
+            font-family: arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 30px;
+            margin-left: 50px
+        }
+
+        .avausnappi {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: rgb(190, 140, 0);
+            padding: 10px 15px;
+            border: 1px solid black;
+            height: 50px;
+        }
+
+        .avausnappi:hover {
+            background-color: rgb(170, 130, 0);
+        }
+
+        #main {
+            transition: margin-left 0.5s;
+            padding: 16px;
+        }
+
+        .active {
+            background-color: rgb(200, 120, 20, 0.5);
+            border: 1px solid black;
+        }
+
+        footer {
+            background-color: rgba(190, 140, 0, 0.7);
+            color: rgba(75, 55, 55, 0.7);
+            max-width: 1015px;
+            width: 100%;
+            padding: 2px;
+            border: 1px solid black;
+        }
+
+        .sivuotsikot {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+<body>
+<br>
+<br>
+
+<div id="Sivu" class="sivupalkki">
+    <a href="javascript:void(0)" class="sulkunappi" onclick="closeNav()">x</a>
+    <h3 class="sivuotsikot">Hieno valikko</h3>
+    <hr>
+    <br>
+    <a href="Skyrim.html">Etusivu</a>
+    <a href="tutoriaali.html">Tutoriaali</a>
+    <a href="ekatjutut.html">Ekat jutut</a>
+    <a href="7000askelmaa.html" class="active">7000 askelmaa</a>
+</div>
+
+<button class="avausnappi" onclick="openNav()">☰</button>
+
+<script type="text/javascript">
+    function openNav() {
+        document.getElementById("Sivu").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("Sivu").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+
+<main>
+    <header><h1>Skyrim-projekti</h1></header>
+<br>
+    <div id="main">
+    <section>
+        <h3>Kohti Helgeniä ja sen ohi</h3>
+    <p>Juuh elikkäs, tässä kohtaa sun kannattaa fast travellata eli mystisesti pikamatkustaa
+    takaisin Helgeniin. (Oispa oikeassakin elämässä fast travel.) Helgen on hyökkäyksen jäljiltä
+        täynnä rosmoja, mutta älä huoli, jos pikamatkustat sinne, spawnaat kaupungin
+        ulkopuolelle, etkä joudu taistelemaan rosmojen kanssa. </p>
+
+        <p>Siitä vaan sit jatkat matkaasi,
+    jos oot fiksu niin seuraat tienviittoja, jotka osoittavat kohti Ivarstead-nimistä kylää
+        ja kuljet tietä pitkin. Jos et oo fiksu, (kuten 99% Skyrimin pelaajista) niin kävelet
+    linnuntietä kohti markkeria, niin pääset seikkailemaan ties missä pöpeliköissä ja
+    luultavasti myös pääset kiipeämään sekä vuorenjyrkännettä ylös, että myös alas. Tätä
+    kutsutaan <i>Skyrim-parkouriksi.</i></p>
+
+        <p>Tietä pitkin kun kuljet ja seuraat tienviittoja, niin lopulta löydät Ivarsteadin.
+        Kylän laidalta lähtee tie, jota pitkin pääset kapuamaan vuoren huipulle. Vuoren
+        juurella tapaat hepun nimeltään Klimmek, joka kertoo, että polun varrella on peräti
+        7000 askelmaa! Jokuhan on oikeasti laskenut tämän, eikä lukema ole lähelläkään
+        seitsemää tuhatta todellisuudessa. Mutta sinä nappaat Klimmekiltä eväitä, jotka lupaat
+        toimittaa Greybeardseille hänen puolestaan. Siitä saa 750 rahulia, mutta yleensä se
+        palkinnon hakeminen unohtuu, kun into piukeena lähtee tekemään muita tehtäviä.</p>
+</section>
+
+        <br>
+        <section>
+            <h3>High Hrothgar</h3>
+            <p>Myönnän, että mun piti googlettaa tän paikan oikea kirjoitusasu, mutta nyt
+            se ehkä on oikein. Vuoren huipulla on semmonen paikka kuin High Hrothgar, ja siellä
+            asuu Greybeardsit. Matkalla huipulle kohtaat joitain ihme tyyppejä, jotka hengailee
+            muuten vaan siellä vuorella, ja sit vastaan tulee myös frost trolli, eli peikkokaveri,
+            joka ei oikeesti oo kaveri, vaan se lyö tosi kovaa.<br><br>
+
+            Tässä kohtaa on hyötyä siitä Lydiasta. Voit laittaa sen menemään edeltä, niin, että
+            peikko lyö Lydiaa eikä sua, ja sit voit ite ampua peikkoa nuolilla jostain kaukaa.</p>
+
+            <p>Lopulta kun pääset perille, niin muista jättää ne Klimmekin ruokatarvikkeet arkkuun
+            High Hrothgarin eteen, niin sit voit mukavasti unohtaa hakea sen palkinnon.<br><br>
+
+            Sisällä odottaa neljä parrakasta äijää, eli Greybeardsit. Mietin välillä, että saako
+            porukasta potkut, jos ajaa parran pois. Mutta palatakseni asiaan, sisällä pääset
+            todistamaan sun kyvyt näille harmaahapseille, eli sun täytyy <i>huutaa</i>. Se on
+            niinku lohikäärmekielellä puhumista ja sit voit vaikka huutaa Lydian alas vuorelta.</p>
+
+            <p>Harmaahapsit opettaa sulle myös toisen huudon, semmosen ku Whirlwind Sprint, ja se
+            tekee sen, että lennähdät kymmenen metriä eteenpäin sekunnissa. Tätä huutoa ei kannata
+            käyttää kovin lähellä äkillistä pudotusta, koska siinä voi käydä köpelösti. Sitten saatkin tehtävän lähteä noutamaan raunioista semmosta torvea. Tossua toisen
+            eteen siis!</p>
+        </section>
+
+        <br>
+        <footer><p>2026 Hirmuhallitsija Hanses<br>
+            Iiiiiihan kaikki minun käsialaa</p>
+        </footer>
+    </div>
+</main>
+<aside><h3 class="sivuotsikot">Tästä vähän
+    <br>maistiaisia:</h3>
+    <hr>
+    <br>
+    <img src="maisema-solitude.jpg" alt="Maisema Solitude" class="sivukuva"></aside>
+</body>
