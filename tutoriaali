@@ -4,28 +4,28 @@
     <meta name="viewport" content="width:device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="#">
-    <title>Skyrim - etusivu</title>
+    <title>Skyrim - tutoriaali</title>
     <link rel="icon" type="image/jpg" href="skyrimlogotransparent.png">
     <style>
         body {
             background-image: url("maisema.jpg");
             background-repeat: no-repeat;
-        background-attachment: fixed;
+            background-attachment: fixed;
             background-size: cover;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        display: flex;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
 
         .nappi {
             background-color: rgb(190, 140, 0);
-        color: black;
-        font-family: "Courier New", Courier, monospace;
-        border: 1px solid black;
-        font-size: 20px;
-        cursor: pointer;
-        margin: auto
+            color: black;
+            font-family: "Courier New", Courier, monospace;
+            border: 1px solid black;
+            font-size: 20px;
+            cursor: pointer;
+            margin: auto
         }
 
         h2 {
@@ -34,7 +34,7 @@
 
         p {
             font-family: "Times New Roman", Times, serif;
-        font-size: 18px;
+            font-size: 18px;
         }
 
         img {
@@ -52,7 +52,7 @@
 
         .center {
             margin-left: auto;
-        margin-right: auto;
+            margin-right: auto;
         }
 
         header {
@@ -66,11 +66,11 @@
 
         section {
             background-color: rgba(160, 160, 160, 0.7);
-        border: 1px solid black;
+            border: 1px solid black;
             width: 100%;
             max-width: 1000px;
-        margin: 0;
-        padding: 10px
+            margin: 0;
+            padding: 10px
         }
 
         main {
@@ -82,7 +82,7 @@
         }
 
         a {
-            font-family: "Times New Roman", Times, serif;
+            font-family: "Times New Roman", times, serif;
             font-size: 20px;
             text-decoration: none;
         }
@@ -98,6 +98,7 @@
         aside {
             background-color: rgba(190, 140, 0, 0.7);
             border: 1px solid black;
+            margin-left: 0;
             max-width: 500px;
             width: 100%;
             margin-top: 2%;
@@ -124,6 +125,7 @@
             background-color: rgba(190, 140, 0);
             border: 1px solid black;
             padding-top: 60px;
+            font-family: "Times New Roman", Times, serif;
         }
 
         .sivupalkki a {
@@ -134,7 +136,7 @@
         }
 
         .sivupalkki .sulkunappi {
-            font-family: "arial", Helvetica, sans-serif;
+            font-family: arial, Helvetica, sans-serif;
             position: absolute;
             top: 0;
             right: 25px;
@@ -173,9 +175,15 @@
             padding: 2px;
             border: 1px solid black;
         }
+
         .sivuotsikot {
             font-family: "Courier New", Courier, monospace;
             font-size: 25px;
+        }
+
+        .alaotsikko {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 20px;
         }
     </style>
 
@@ -186,11 +194,11 @@
 
 <div id="Sivu" class="sivupalkki">
     <a href="javascript:void(0)" class="sulkunappi" onclick="closeNav()">x</a>
-            <h3 class="sivuotsikot">Hieno valikko</h3>
-            <hr>
+    <h3 class="sivuotsikot">Hieno valikko</h3>
+    <hr>
     <br>
-    <a href="Skyrim.html" class="active">Etusivu</a>
-    <a href="tutoriaali.html">Tutoriaali</a>
+    <a href="Skyrim.html">Etusivu</a>
+    <a href="tutoriaali.html" class="active">Tutoriaali</a>
     <a href="ekatjutut.html">Ekat jutut</a>
     <a href="7000askelmaa.html">7000 askelmaa</a>
 </div>
@@ -213,89 +221,65 @@
     <header><h1>Skyrim-projekti</h1></header>
 <br>
     <div id="main">
-<section>
-    <h2>Mitä täällä on?</h2>
-    <p>Teen hienon Skyrim-sivun opetellakseni koodaamaan.</p>
-    <img src="skyrimlogo.jpg" alt="Skyrimin logo" class="kuva">
-<br>
-    <br>
-</section>
-<br>
+    <section><div>
+        <h2>Tutoriaali: Helgen</h2>
+        <h3 class="alaotsikko">Legends don't burn down villages</h3>
+        <p>Aloitat pelin teloituksella ja just ennenku sun pää katkastaan niin tulee pahis!lohis-Alduin,
+            joka säikäyttää kaikki. Ensimmäinen tehtäväsi on paeta Helgenin kylästä Alduinin hyökkäyksestä.
+        Et voi kuolla tutoriaalissa, joten ei muuta kuin kohti vaaroja.<br><br></p>
+        <img src="alduin.jpg" alt="Alduin" class="kuva">
 
-<section class="kysely"><h2>Mitä Skyrim-peliaikasi kertoo sinusta?</h2>
+        <p>Ensin sun täytyy lähteä Ralofin perään, joka on tosiaan myöskin vankina ja olisi tullut
+        teloitetuksi, jos Alduin ei olis keskeyttänyt sitä. Ralof on Stormcloakkien eli
+            <i>myrskyviittojen</i> (lol) kannattaja.</p>
 
-        <table class="center">
-    <tr style="height: 50px">
-        <th style="width: 150px">Pelituntisi:</th>
-        <th style="width: 200px">Se kertoo, että:</th>
-    </tr>
-    <tr style="height: 50px">
-        <td>1h</td>
-        <td>Et taida tykätä tästä.</td>
-    </tr>
-    <tr style="height: 50px">
-        <td>10h</td>
-        <td>Kärpänen saattoi puraista.</td>
-    </tr>
-    <tr style="height: 50px">
-        <td>100h</td>
-        <td>Olet todellinen Dovahkiin.</td>
-    </tr>
-    <tr style="height: 50px">
-        <td>1000h</td>
-        <td>Pitäisikö kokeilla muutakin?</td>
-    </tr>
-</table>
-    <br>
+        <p>Hetken päästä erkaannut Ralofista ja löydät Hadvarin, joka taas on Imperiaalien kannattaja.
+        Pääset tekemään ensimmäisen valintasi, kun sun täytyy päättää lähdetkö suorittamaan tutoriaalia
+        Ralofin vai Hadvarin kanssa. Henk koht shippaan näitä kahta ihan tosissaan, oon ihan satavarma
+        että niillä on jotain sutinaa.</p>
 
-</section>
+        <img src="hadvar.jpg" alt="Hadvar" style="width: 250px" class="kuva">
+        <img src="ralof.jpg" alt="Ralof" style="width: 250px" class="kuva">
+
+    </div></section>
 <br>
-    <button class="nappi" onclick="myFunction()">Piilota tyhmä taulukko</button>
-    <script>
-        function myFunction() {
-            var x = document.getElementsByClassName("kysely");
-            for (var i = 0; i < x.length; i++){
-                x[i].style.display = "none";
-            }
-        }
-    </script>
-    <br>
-<br>
+    <section><h3 class="alaotsikko">Tyrmään mars</h3>
+    <p>Eli siinä kohtaa kun oot tehny sen päätöksen kumman matkaan lähdet, niin menet tyrmään. En muista
+    miten Ralofin puoli menee koska Stormcloakit on pylleröstä (sorry not sorry), niin kerron, että
+    jos valitset Hadvarin, niin sun täytyy kerää arkuista miekka ja joku huono armori ja sit siellä
+    nurkkapöydällä on neljä kolikkoa mitkä kantsii kerää koska kolikot on elämän tarkoitus.</p>
 
-    <section><h2>Tervetuloa!</h2>
-        <p>Jos et jaksa pelata Skyrimiä itse, niin voit lukea tältä sivulta mitä pelissä
-    tapahtuu! Eikö olekin hienoa? Minusta Skyrim kuuluu yleissivistykseen ja Skyrim-tietouden pitäisi olla
-        oppiaine perusopetuksessa. <br><br>Tätä sivua saa ihan vapaasti käyttää sähköisenä oppimateriaalina.</p>
+        <p>Tyrmässä kohtaat kaikenlaista jännää, kuten tyhmiä Stormcloakkeja ja kidutuskammion ja tosi
+        pelottavan nallekarhun. Hadvar antaa sulle vaihtoehdon joko ampua sen nuolilla tai sniikata ohi,
+        mutta oikeasti voit vaikka mäiskiä sitä paljailla nyrkeillä jos se sinua miellyttää. Nallekarhu
+        on tutoriaalin viimeinen osio, sen jälkeen pääset <i>vapauteen</i> eli open worldiin sekoilemaan.</p>
+
+        <img src="nallekarhu.jpg" alt="Nallekarhu" class="kuva">
+
+        <p>Tutoriaalin päätteeksi saat valita, <s>oletko normaali vai sekopää</s> siis haluatko pelata
+        tavallisesti vai otatko survival-moden, jolloin sun pitää syödä, nukkua ja saatat vaikka paleltua.
+        Hullujen hommaa semmonen.</p>
 
     </section>
         <br>
         <footer><p>2026 Hirmuhallitsija Hanses<br>
-        Iiiiiihan kaikki minun käsialaa</p>
-    </footer>
-
+            Iiiiiihan kaikki minun käsialaa</p>
+        </footer>
     </div>
+
 </main>
 
-<aside>
-    <h3 class="sivuotsikot">Tästä vähän <br>maistiaisia:</h3>
-        <hr>
+
+<aside><h3 class="sivuotsikot">Tästä vähän <br>maistiaisia:</h3>
+    <hr>
     <br>
-    <img src="maisema-suo.jpg" alt="Suomaisema" class="sivukuva">
-    <br>
-    <br>
-    <img src="maisema-revontuli.jpg" alt="Revontulia" class="sivukuva">
+    <img src="maisema-bleak.jpg" alt="Auringonlasku" class="sivukuva">
     <br>
     <br>
-    <img src="maisema-kyltti.jpg" alt="Kyltti Riftissä" class="sivukuva">
+    <img src="maisema-rift.jpg" alt="Maisema Riftistä" class="sivukuva">
     <br>
     <br>
-    <img src="maisema-alttari.png" alt="Alttari suolla" class="sivukuva">
-    <br>
-    <br>
+    <img src="maisema-kuu.png" alt="Yömaisema" class="sivukuva">
 </aside>
-<br>
-
-
-
 </body>
 </html>
