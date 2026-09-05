@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="#">
+    <title>Skyrim - ekat jutut</title>
+    <link rel="icon" type="image/jpg" href="skyrimlogotransparent.png">
+    <style>
+        body {
+            background-image: url("maisema.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nappi {
+            background-color: rgb(190, 140, 0);
+            color: black;
+            font-family: "Courier New", Courier, monospace;
+            border: 1px solid black;
+            font-size: 20px;
+            cursor: pointer;
+            margin: auto
+        }
+
+        h2 {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        p {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 18px;
+        }
+
+        img {
+            width: 60%
+        }
+
+        table, th, td {
+            border: 1px solid dimgrey;
+            border-collapse:collapse;
+        }
+
+        th, td {
+            background-color: rgba(190, 140, 30);
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header {
+            background-color: rgba(190, 140, 0, 0.8);
+            border: 2px solid black;
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        section {
+            background-color: rgba(160, 160, 160, 0.7);
+            border: 1px solid black;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0;
+            padding: 10px
+        }
+
+        main {
+            padding: 24px;
+        }
+
+        hr {
+            border-color: black
+        }
+
+        a {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: maroon
+        }
+
+        a:link {
+            color: black
+        }
+
+        aside {
+            background-color: rgba(190, 140, 0, 0.7);
+            border: 1px solid black;
+            margin-left: 0;
+            max-width: 500px;
+            width: 100%;
+            margin-top: 2%;
+            float: right;
+        }
+
+        .kuva {
+            border: 5px solid black;
+        }
+
+        .sivukuva {
+            border: 5px solid black
+        }
+
+        .sivupalkki {
+            height:100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+            background-color: rgba(190, 140, 0);
+            border: 1px solid black;
+            padding-top: 60px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .sivupalkki a {
+            display: block;
+            padding: 8px 8px 8px 32px;
+            transition: 0.3s;
+            color: black;
+        }
+
+        .sivupalkki .sulkunappi {
+            font-family: arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 30px;
+            margin-left: 50px
+        }
+
+        .avausnappi {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: rgb(190, 140, 0);
+            padding: 10px 15px;
+            border: 1px solid black;
+            height: 50px;
+        }
+
+        .avausnappi:hover {
+            background-color: rgb(170, 130, 0);
+        }
+
+        #main {
+            transition: margin-left 0.5s;
+            padding: 16px;
+        }
+
+        .active {
+            background-color: rgb(200, 120, 20, 0.5);
+            border: 1px solid black;
+        }
+
+        footer {
+            background-color: rgba(190, 140, 0, 0.7);
+            color: rgba(75, 55, 55, 0.7);
+            max-width: 1015px;
+            width: 100%;
+            padding: 2px;
+            border: 1px solid black;
+        }
+
+        .sivuotsikot {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+<body>
+<br>
+<br>
+
+<div id="Sivu" class="sivupalkki">
+    <a href="javascript:void(0)" class="sulkunappi" onclick="closeNav()">x</a>
+    <h3 class="sivuotsikot">Hieno valikko</h3>
+    <hr>
+    <br>
+    <a href="Skyrim.html">Etusivu</a>
+    <a href="tutoriaali.html">Tutoriaali</a>
+    <a href="ekatjutut.html" class="active">Ekat jutut</a>
+    <a href="7000askelmaa.html">7000 askelmaa</a>
+</div>
+
+<button class="avausnappi" onclick="openNav()">☰</button>
+
+<script type="text/javascript">
+    function openNav() {
+        document.getElementById("Sivu").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("Sivu").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+
+<main>
+    <header><h1>Skyrim-projekti</h1></header>
+<br>
+    <div id="main">
+    <section><h2>Mitä tutoriaalin jälkeen?</h2>
+    <h3>Riverwood</h3>
+    <p>No ihan mitä haluat. En kyl suosittele tekemään Thieves Guildia kun oot level 1, koska siinä tarvii
+        sniikkailla, ja se on aika kivuliasta jos on tosi pieni sneak level. (Tiedän kyllä, et jotkut tekee
+        sitä silti.) Mutta noin niinku muuten: olet vapaa.</p>
+
+        <p>Tässä kohtaa main quest ohjaa sut köpöttelemään läheiseen Riverwoodin kylään. Mut ennen
+        Riverwoodia saatat törmätä kolmeen pystyssä sojottavaan kiveen, joista voit valkkaa itelles jonkun
+            supervoiman. Eli siis siinä on Mage Stone, Warrior Stone ja Thief Stone, joista voit valita,
+            minkälaiset taidot sulla kehittyy nopeiten. Tällä valinnalla ei oikeesti oo ihan kauheesti
+            väliä ainakaan oman kokemuksen mukaan.</p>
+
+        <img src="kivet.jpg" alt="Guardian Stones" class="kuva">
+
+        <p>Riippuen siitä, valitsitko alussa Ralofin vai Hadvarin niin tämä Riverwood-kohtaus pikkusen
+            muuttuu. Ralof vie sut siskonsa luokse ja Hadvar setänsä luokse. Kummin päin vain, niin siinä
+            käydään semmonen "aaah lohikäärmeitä hui kamala" -tyyppinen keskustelu, ja sut lähetetään viemään
+            sanaa Whiterunin kaupunkiin paikalliselle jaarlille.</p>
+
+    <img src="riverwood.jpg" alt="Riverwood" class="kuva">
+        <p>Ei kannata hyökätä kanan kimppuun.</p></section>
+<br>
+<section>
+        <h3>Bleak Falls Barrow</h3>
+        <p>Ähäkutti. Tämä voi jakaa mielipiteitä, mutta mun asiantunteva mielipide on se, että aina
+            Riverwoodista Bleak Falls Barrowiin. Se on muinainen raunio tois puol jokke Riverwoodista
+            katsottuna ja sieltä saa semmosen siistin kiven, minkä tarvitset ihan hetken päästä pelin main
+            questia varten. Jos haet sen tässä kohtaa, niin vältyt ylimääräiseltä juoksentelulta.
+        Aika on rahaa, vai miten se nyt menikään.</p>
+
+    <img src="bleakfallsbarrow.jpg" alt="Bleak Falls Barrow" class="kuva">
+
+        <p>Matkalla Bleak Falls Barrow'hun kohtaat pari sutta ja pari bandittia, mutta ne saa ihan
+            näppärästi kukistettua koska vihollisten taso mukautuu sinun tasoosi. Kukkulan huipulla näet tosi
+            siistin raunion, jossa on rosmoja ja syvemmältä löytyy käveleviä ruumiita eli draugreita. Ne
+        on aika perinteisiä vihollisia tässä pelissä ja niitä on about kaikkialla.</p>
+
+<img src="bkf-boss.jpg" alt="Bleak Falls Barrow boss room" class="kuva">
+
+        <p>Raunion lopussa on bossfight, ja saat tältä bossilta sen Dragonstonen, jota tarvitset aivan juuri.
+        Tässä bossihuoneessa on ainakin kaksi piilotettua arkkua, joista saa jotain pientä loottia napattua
+        itselleen.</p>
+    </section>
+<br>
+
+<section>
+    <h3>Whiterun</h3>
+
+    <img src="whiterun.jpg" alt="Whiterun" class="kuva">
+    <p>Seuraavaksi suuntaat kohti Whiterunin kaupunkia, jossa juttelet jaarli Balrgruufin kanssa ja annat
+    Dragonstonen velholle nimeltä Farengar ja saat mainetta ja kunniaa, kuten asiaan kuuluu. Kunnes tulee
+    hurja käänne, nimittäin lohikäärme on nähty läheisellä vahtitornilla ja se pitää pysäyttää, ennen
+    kuin se polttaa koko tornin poroksi. Ja koska sinä kuitenkin näit omin silmin lohikäärmeen vain hetkeä
+        aiemmin, niin jaarli itse haluaa, että SINÄ lähdet pysäyttämään tuon hirmuliskon.
+
+        Elikkä ei kun matkaan ja lohikäärmettä metsästämään!</p>
+
+    <img src="watchtower.jpg" alt="Watchtower" class="kuva">
+
+    <p>Vahtitorni on ilmiliekeissä! Voi kamala. Eikä aikaakaan, kun lohikäärme Mirmulnir saapuu paikalle ja hönkii
+        lieskoja kaikkien niskaan. Sinun tehtäväsi on yhdessä Whiterunin sotilaiden kanssa kukistaa se.
+    Tämä projekti saattaa vaatia nuolen jos toisenkin, mutta kyllä Mirmulnir lopulta kukistuu.</p>
+
+    <p>Ja mitäs kummaa! Kun lohikäärme kuolla kupsahtaa, niin sinä yhtäkkiä imet sen sielun itseesi, sepäs
+    vasta onkin hurjaa. Yksi sotilaista kutsuu sua <i>dragonborniksi</i>, mitä se sitten tarkoittaakaan.
+    <br><br>
+    Ei muuta kuin takaisin kylille hakemaan palkintoa. Mutta kun pääset takaisin kaupunkiin, niin taivaista
+    kuuluu jylisevä ääni: "<i>DO-VAH-KIIN</i>". Jaarli kertookin sulle, että harmaaparrat, elikkä
+    Greybeardsit siellä huutelee. Se oli kutsuhuuto dragonbornille, eli <i>sinulle</i>.</p>
+
+    <p>Lopuksi sut julistetaan Thaneksi, eli olet nyt kaupungin siistein tyyppi ja saat oman
+    palvelijan. Se on Lydia ja se on aina tiellä. Suosittelen kuitenkin ottaa sen tässä vaiheessa
+    mukaan, koska siitä lienee hyötyä hetken päästä.</p>
+
+    <img src="lydia.jpg" alt="lydia" class="kuva">
+</section>
+        <br>
+        <footer><p>2026 Hirmuhallitsija Hanses<br>
+            Iiiiiihan kaikki minun käsialaa</p>
+        </footer>
+    </div></main>
+
+<aside><h3 class="sivuotsikot">Tästä vähän
+    <br>maistiaisia:</h3>
+    <hr>
+    <br>
+    <img src="maisema-whiterun.jpg" alt="Maisema Whiterunista" class="sivukuva">
+    <br>
+    <br>
+    <img src="maisema-lumi.jpg" alt="Luminen maisema" class="sivukuva">
+    <br>
+    <br>
+    <img src="maisema-masser.png" alt="Yömaisema" class="sivukuva">
+</aside>
+</body>
