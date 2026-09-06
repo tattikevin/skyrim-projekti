@@ -4,28 +4,28 @@
     <meta name="viewport" content="width:device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="#">
-    <title>Skyrim - etusivu</title>
+    <title>Skyrim - ekat jutut</title>
     <link rel="icon" type="image/jpg" href="skyrimlogotransparent.png">
     <style>
         body {
             background-image: url("maisema.jpg");
             background-repeat: no-repeat;
-        background-attachment: fixed;
+            background-attachment: fixed;
             background-size: cover;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        display: flex;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
 
         .nappi {
             background-color: rgb(190, 140, 0);
-        color: black;
-        font-family: "Courier New", Courier, monospace;
-        border: 1px solid black;
-        font-size: 20px;
-        cursor: pointer;
-        margin: auto
+            color: black;
+            font-family: "Courier New", Courier, monospace;
+            border: 1px solid black;
+            font-size: 20px;
+            cursor: pointer;
+            margin: auto
         }
 
         h2 {
@@ -34,7 +34,7 @@
 
         p {
             font-family: "Times New Roman", Times, serif;
-        font-size: 15px;
+            font-size: 15px;
         }
 
         img {
@@ -52,7 +52,7 @@
 
         .center {
             margin-left: auto;
-        margin-right: auto;
+            margin-right: auto;
         }
 
         header {
@@ -66,11 +66,11 @@
 
         section {
             background-color: rgba(160, 160, 160, 0.7);
-        border: 1px solid black;
+            border: 1px solid black;
             width: 100%;
             max-width: 1000px;
-        margin: 0;
-        padding: 10px
+            margin: 0;
+            padding: 10px
         }
 
         main {
@@ -98,6 +98,7 @@
         aside {
             background-color: rgba(190, 140, 0, 0.7);
             border: 1px solid black;
+            margin-left: 0;
             max-width: 500px;
             width: 100%;
             margin-top: 2%;
@@ -109,9 +110,7 @@
         }
 
         .sivukuva {
-            border: 5px solid black;
-            max-width: 300px;
-            width: 100%;
+            border: 5px solid black
         }
 
         .sivupalkki {
@@ -126,6 +125,7 @@
             background-color: rgba(190, 140, 0);
             border: 1px solid black;
             padding-top: 60px;
+            font-family: "Times New Roman", Times, serif;
         }
 
         .sivupalkki a {
@@ -136,7 +136,7 @@
         }
 
         .sivupalkki .sulkunappi {
-            font-family: "arial", Helvetica, sans-serif;
+            font-family: arial, Helvetica, sans-serif;
             position: absolute;
             top: 0;
             right: 25px;
@@ -175,12 +175,22 @@
             padding: 2px;
             border: 1px solid black;
         }
+
         .sivuotsikot {
             font-family: "Courier New", Courier, monospace;
             font-size: 25px;
         }
-    </style>
 
+        .hahmokuva {
+            border: 5px solid black;
+            width: 100%;
+            max-width: 250px;
+        }
+
+        .sivupalkki a:hover {
+            background-color: rgb(170, 100, 20, 0.5);
+        }
+    </style>
 </head>
 <body>
 <br>
@@ -192,9 +202,11 @@
             <hr>
     <br>
     <a href="Skyrim.html" class="active">Etusivu</a>
+    <a href="kuvagalleria.html">Kuvagalleria</a>
     <a href="tutoriaali.html">Tutoriaali</a>
     <a href="ekatjutut.html">Ekat jutut</a>
     <a href="7000askelmaa.html">7000 askelmaa</a>
+    <a href="jurgenintorvi.html">Jurgenin torvi</a>
 </div>
 
 <button class="avausnappi" onclick="openNav()">☰</button>
@@ -212,15 +224,17 @@
 </script>
 
 <main>
+    <div id="main">
     <header><h1>Skyrim-projekti</h1></header>
 <br>
-    <div id="main">
-<section>
+
+        <section>
     <h2>Mitä täällä on?</h2>
     <p>Teen hienon Skyrim-sivun opetellakseni koodaamaan.</p>
     <img src="skyrimlogo.jpg" alt="Skyrimin logo" class="kuva">
 <br>
     <br>
+
 </section>
 <br>
 
@@ -268,40 +282,19 @@
         <p>Jos et jaksa pelata Skyrimiä itse, niin voit lukea tältä sivulta mitä pelissä
     tapahtuu! Eikö olekin hienoa? Minusta Skyrim kuuluu yleissivistykseen ja Skyrim-tietouden pitäisi olla
         oppiaine perusopetuksessa. <br><br>Tätä sivua saa ihan vapaasti käyttää sähköisenä oppimateriaalina.</p>
-</section>
-    
+
+    </section>
+
+<br>
 
     <br>
-
-<section>
-        <h3 class="sivuotsikot">Tästä vähän <br>maistiaisia:</h3>
-        <hr>
-        <br>
-        <img src="maisema-suo.jpg" alt="Suomaisema" class="sivukuva"> <img src="maisema-whiterun.jpg" alt="Maisema Whiterunista" class="sivukuva">
-        <br>
-        <br>
-        <img src="maisema-revontuli.jpg" alt="Revontulia" class="sivukuva"> <img src="maisema-lumi.jpg" alt="Luminen maisema" class="sivukuva">
-        <br>
-        <br>
-        <img src="maisema-alttari.png" alt="Alttari suolla" class="sivukuva"> <img src="maisema-riverwood.jpg" alt="Maisema Riverwood" class="sivukuva">
-        <br>
-        <br>
-        <img src="maisema-bleak.jpg" alt="Auringonlasku" class="sivukuva"> <img src="maisema-rift.jpg" alt="Maisema Riftistä" class="sivukuva">
-        <br>
-        <br>
-        <img src="maisema-solitude.jpg" alt="Maisema Solitude" class="sivukuva"> 
-        <br>
-
-    
-    
-    </section>
-        <br>
-        <footer><p>2026 Hirmuhallitsija Hanses<br>
+    <footer><p>2026 Hirmuhallitsija Hanses<br>
         Iiiiiihan kaikki minun käsialaa</p>
     </footer>
-    </div>
-</main>
-<br>
+    </div></main>
+
+</body>
+</html>
 
 
 
