@@ -113,12 +113,6 @@
             border: 5px solid black
         }
 
-        .hahmokuva {
-            border: 5px solid black;
-            width: 100%;
-            max-width: 250px;
-        }
-
         .sivupalkki {
             height:100%;
             width: 0;
@@ -191,6 +185,16 @@
             font-family: "Times New Roman", Times, serif;
             font-size: 20px;
         }
+
+        .hahmokuva {
+            border: 5px solid black;
+            width: 100%;
+            max-width: 250px;
+        }
+
+        .sivupalkki a:hover {
+            background-color: rgb(170, 100, 20, 0.5);
+        }
     </style>
 
 </head>
@@ -204,9 +208,11 @@
     <hr>
     <br>
     <a href="Skyrim.html">Etusivu</a>
+    <a href="kuvagalleria.html">Kuvagalleria</a>
     <a href="tutoriaali.html" class="active">Tutoriaali</a>
     <a href="ekatjutut.html">Ekat jutut</a>
     <a href="7000askelmaa.html">7000 askelmaa</a>
+    <a href="jurgenintorvi.html">Jurgenin torvi</a>
 </div>
 
 <button class="avausnappi" onclick="openNav()">☰</button>
@@ -224,11 +230,13 @@
 </script>
 
 <main>
+    <div id="main">
     <header><h1>Skyrim-projekti</h1></header>
 <br>
-    <div id="main">
+
     <section><div>
         <h2>Tutoriaali: Helgen</h2>
+        <hr>
         <h3 class="alaotsikko">Legends don't burn down villages</h3>
         <p>Aloitat pelin teloituksella ja just ennenku sun pää katkastaan niin tulee pahis!lohis-Alduin,
             joka säikäyttää kaikki. Ensimmäinen tehtäväsi on paeta Helgenin kylästä Alduinin hyökkäyksestä.
@@ -272,6 +280,7 @@
             Iiiiiihan kaikki minun käsialaa</p>
         </footer>
     </div>
+
 </main>
 </body>
 </html>
